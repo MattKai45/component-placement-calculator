@@ -51,7 +51,7 @@ def main(argv):
       Components_x[i] = round((radius * math.sin(radStart + (radSteps*i))) + offset_x,2)
       Components_y[i] = round((radius * math.cos(radStart + (radSteps*i))) + offset_y,2)
       Components_r[i] = round(math.degrees(radStart + (radSteps*i)),2)
-      print("Component " + str(i+1) + "\tpos=[" + "{:.2f}".format(Components_x[i]) + ", " + "{:.2f}".format(Components_x[i]) + "]\trot=" + "{:.2f}".format(Components_r[i]) + " degrees")
+      print("Component " + str(i+1) + "\tpos=[" + "{:.2f}".format(Components_x[i]) + ", " + "{:.2f}".format(Components_y[i]) + "]\trot=" + "{:.2f}".format(Components_r[i]) + " degrees")
 
 if __name__ == "__main__":
    main(sys.argv[1:])
